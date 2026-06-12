@@ -1,0 +1,214 @@
+{
+    "fixture_id":  "grid_based_dynamic_work_surface_contract_sample_1002A",
+    "stage_code":  "1002A_XIAOJIAO_GRID_BASED_DYNAMIC_WORK_SURFACE_TECH_SURVEY_AND_CONTRACT",
+    "fixture_type":  "tech_survey_contract_sample_only",
+    "surface_modes":  [
+                          {
+                              "mode":  "light_entry",
+                              "task_complexity":  "low",
+                              "default_visible_cards":  [
+                                                            "today_summary",
+                                                            "agent_single_note",
+                                                            "primary_action_chips"
+                                                        ]
+                          },
+                          {
+                              "mode":  "focus_surface",
+                              "task_complexity":  "medium",
+                              "default_visible_cards":  [
+                                                            "primary_work_object",
+                                                            "attached_agent_notes",
+                                                            "related_materials_compact"
+                                                        ]
+                          },
+                          {
+                              "mode":  "grid_deep_studio",
+                              "task_complexity":  "high",
+                              "default_visible_cards":  [
+                                                            "primary_work_object",
+                                                            "resource_cards",
+                                                            "tool_cards",
+                                                            "output_preview",
+                                                            "agent_notes"
+                                                        ]
+                          },
+                          {
+                              "mode":  "analysis_board",
+                              "task_complexity":  "high_data",
+                              "default_visible_cards":  [
+                                                            "analysis_cards",
+                                                            "student_list",
+                                                            "evidence_samples",
+                                                            "teacher_review_gate"
+                                                        ]
+                          }
+                      ],
+    "grid_layout_schema":  {
+                               "columns":  12,
+                               "base_unit_px":  8,
+                               "card_width_units":  [
+                                                        3,
+                                                        4,
+                                                        6,
+                                                        8,
+                                                        12
+                                                    ],
+                               "responsive_breakpoints":  [
+                                                              "desktop",
+                                                              "tablet",
+                                                              "mobile"
+                                                          ],
+                               "layout_persistable":  true,
+                               "bounded_drag":  true,
+                               "free_infinite_canvas":  false
+                           },
+    "zone_types":  [
+                       "primary_work_zone",
+                       "resource_zone",
+                       "tool_zone",
+                       "analysis_zone",
+                       "agent_note_layer",
+                       "output_zone",
+                       "work_log_zone"
+                   ],
+    "card_types":  [
+                       "primary_work_object_card",
+                       "resource_card",
+                       "tool_card",
+                       "analysis_card",
+                       "agent_note_card",
+                       "output_card",
+                       "work_log_card"
+                   ],
+    "card_registry":  [
+                          {
+                              "card_type":  "primary_work_object_card",
+                              "allowed_zones":  [
+                                                    "primary_work_zone"
+                                                ],
+                              "draggable":  true,
+                              "resizable":  true,
+                              "hide_allowed":  false,
+                              "must_remain_visible":  true
+                          },
+                          {
+                              "card_type":  "resource_card",
+                              "allowed_zones":  [
+                                                    "resource_zone",
+                                                    "primary_work_zone"
+                                                ],
+                              "draggable":  true,
+                              "collapsible":  true,
+                              "default_focus_priority":  "supporting"
+                          },
+                          {
+                              "card_type":  "tool_card",
+                              "allowed_zones":  [
+                                                    "tool_zone"
+                                                ],
+                              "default_state":  "docked",
+                              "draggable":  true,
+                              "opens_on_demand":  true
+                          },
+                          {
+                              "card_type":  "analysis_card",
+                              "allowed_zones":  [
+                                                    "analysis_zone"
+                                                ],
+                              "visible_only_for_modes":  [
+                                                             "analysis_board",
+                                                             "grid_deep_studio"
+                                                         ],
+                              "resizable":  true
+                          },
+                          {
+                              "card_type":  "agent_note_card",
+                              "allowed_zones":  [
+                                                    "agent_note_layer"
+                                                ],
+                              "attached_to_object_required":  true,
+                              "free_drag_allowed":  false
+                          },
+                          {
+                              "card_type":  "output_card",
+                              "allowed_zones":  [
+                                                    "output_zone",
+                                                    "primary_work_zone"
+                                                ],
+                              "teacher_review_gate_required":  true
+                          },
+                          {
+                              "card_type":  "work_log_card",
+                              "allowed_zones":  [
+                                                    "work_log_zone"
+                                                ],
+                              "default_state":  "drawer"
+                          }
+                      ],
+    "business_pack_layout_presets":  [
+                                         {
+                                             "business_pack":  "lesson_design_business_pack",
+                                             "default_mode":  "grid_deep_studio",
+                                             "primary_card":  "lesson_design_card",
+                                             "layout":  "primary_8_columns_resources_tools_4_columns",
+                                             "registered_cards":  [
+                                                                      "lesson_design_card",
+                                                                      "textbook_catalog_card",
+                                                                      "curriculum_standard_card",
+                                                                      "handout_tool_card",
+                                                                      "rubric_tool_card",
+                                                                      "agent_note_card"
+                                                                  ]
+                                         },
+                                         {
+                                             "business_pack":  "student_evaluation_business_pack",
+                                             "default_mode":  "analysis_board",
+                                             "primary_card":  "student_work_evaluation_table",
+                                             "layout":  "evaluation_table_6_columns_artwork_and_analysis_6_columns",
+                                             "registered_cards":  [
+                                                                      "student_work_evaluation_table",
+                                                                      "artwork_gallery_card",
+                                                                      "dimension_distribution_card",
+                                                                      "comment_generation_tool_card",
+                                                                      "teacher_review_gate_card"
+                                                                  ]
+                                         }
+                                     ],
+    "layout_memory_policy":  {
+                                 "current_task_layout":  "save_per_work_object",
+                                 "same_task_type_preference":  "preference_candidate_only_before_confirmation",
+                                 "system_recommended_layout":  "always_available",
+                                 "teacher_override_layout":  "allowed_with_zone_constraints",
+                                 "restore_default_layout":  "one_action_restore_xiaojiao_recommended_layout",
+                                 "memory_write_performed":  false
+                             },
+    "drag_resize_boundary_rules":  {
+                                       "primary_work_object_cannot_be_hidden":  true,
+                                       "card_zone_constraints_enforced":  true,
+                                       "agent_note_attached_to_object":  true,
+                                       "no_unbounded_whiteboard":  true,
+                                       "restore_recommended_layout_available":  true
+                                   },
+    "technology_selection":  {
+                                 "primary_candidate":  "React-Grid-Layout",
+                                 "secondary_candidate":  "dnd-kit",
+                                 "backup_candidate":  "Gridstack.js",
+                                 "panel_split_candidate":  "react-resizable-panels",
+                                 "future_optional_use":  [
+                                                             "React Flow for graph views",
+                                                             "Craft.js only if a page editor is explicitly needed"
+                                                         ]
+                             },
+    "boundary_flags":  {
+                           "dependency_installed":  false,
+                           "real_frontend_modified":  false,
+                           "runtime_connected":  false,
+                           "provider_model_called":  false,
+                           "database_written":  false,
+                           "memory_written":  false,
+                           "Feishu_written":  false,
+                           "formal_export_created":  false,
+                           "real_ui_implemented":  false,
+                           "production_component_selected":  false
+                       }
+}
