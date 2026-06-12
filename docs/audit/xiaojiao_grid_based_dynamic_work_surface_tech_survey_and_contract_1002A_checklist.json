@@ -1,0 +1,45 @@
+{
+    "stage_code":  "1002A_XIAOJIAO_GRID_BASED_DYNAMIC_WORK_SURFACE_TECH_SURVEY_AND_CONTRACT",
+    "checks":  [
+                   {
+                       "id":  "primary_candidate_selected",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "secondary_candidate_selected",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "not_core_surface_identified",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "surface_modes_defined",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "grid_layout_schema_defined",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "zone_and_card_types_defined",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "business_pack_layout_presets_defined",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "layout_memory_policy_defined",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "no_dependency_install",
+                       "pass":  true
+                   },
+                   {
+                       "id":  "no_real_frontend_change",
+                       "pass":  true
+                   }
+               ]
+}
