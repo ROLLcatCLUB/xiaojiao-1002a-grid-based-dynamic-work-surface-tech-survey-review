@@ -1,0 +1,80 @@
+{
+    "package_name":  "xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A",
+    "package_code":  "1002_XIAOJIAO_PROGRESSIVE_GRID_WORK_SURFACE_PACKAGE",
+    "stage_code":  "1002A_XIAOJIAO_GRID_BASED_DYNAMIC_WORK_SURFACE_TECH_SURVEY_AND_CONTRACT",
+    "final_status":  "XIAOJIAO_GRID_BASED_DYNAMIC_WORK_SURFACE_TECH_SURVEY_AND_CONTRACT_PASS",
+    "generated_at":  "2026-06-13T00:00:00+08:00",
+    "zip_path":  "docs/audit_packages/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A.zip",
+    "zip_sha256":  "EXTERNAL_RECOMPUTATION_REQUIRED",
+    "zip_entry_count":  8,
+    "manifest_minus_zip":  [
+
+                           ],
+    "zip_minus_manifest":  [
+
+                           ],
+    "zip_entries":  [
+                        "docs/foundation/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A.md",
+                        "docs/foundation/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A.json",
+                        "samples/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A/grid_surface_contract_sample_1002A.json",
+                        "docs/audit/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A_result.json",
+                        "docs/audit/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A_report.md",
+                        "docs/audit/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A_checklist.json",
+                        "docs/audit_packages/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A_manifest.json",
+                        "scripts/validate_xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A.py"
+                    ],
+    "entries":  [
+                    {
+                        "path":  "docs/foundation/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A.md",
+                        "size":  2429,
+                        "sha256":  "70670270A640B02A1339A08828A1FF7D4A458C1EDBA03C40BE4A4B12CA68653D"
+                    },
+                    {
+                        "path":  "docs/foundation/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A.json",
+                        "size":  5400,
+                        "sha256":  "0177BF112063D1742816A8167172737182AD33DA74BBDCD253895449BD87BE56"
+                    },
+                    {
+                        "path":  "samples/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A/grid_surface_contract_sample_1002A.json",
+                        "size":  12643,
+                        "sha256":  "5B4E4ED50615848642116F4BA4DEB4C3DA81EBC256315FDA8B7DBA839B40239D"
+                    },
+                    {
+                        "path":  "docs/audit/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A_result.json",
+                        "size":  1526,
+                        "sha256":  "3827A161B449C117B8D51AF53697F5660BA42B4588D54860DE96268F6095C5FD"
+                    },
+                    {
+                        "path":  "docs/audit/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A_report.md",
+                        "size":  846,
+                        "sha256":  "D6B6BD24680547344B2CF794A4450F19DF3888B249C455F578383DAD3367DEEA"
+                    },
+                    {
+                        "path":  "docs/audit/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A_checklist.json",
+                        "size":  1577,
+                        "sha256":  "32E44DBDFEA19F4B8371A680D6654FD59714E1D977902A5AE8EBA1BAF0C47CB3"
+                    },
+                    {
+                        "path":  "docs/audit_packages/xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A_manifest.json",
+                        "size":  null,
+                        "sha256":  "SELF_REFERENTIAL"
+                    },
+                    {
+                        "path":  "scripts/validate_xiaojiao_grid_based_dynamic_work_surface_tech_survey_and_contract_1002A.py",
+                        "size":  4799,
+                        "sha256":  "460FAE347D5CE07115A2E8374F79E723AE2D07CCCF2C4B938DB0A24F819671BA"
+                    }
+                ],
+    "boundary":  {
+                     "dependency_installed":  false,
+                     "real_frontend_modified":  false,
+                     "runtime_connected":  false,
+                     "provider_model_called":  false,
+                     "database_written":  false,
+                     "memory_written":  false,
+                     "Feishu_written":  false,
+                     "formal_export_created":  false,
+                     "real_ui_implemented":  false,
+                     "production_component_selected":  false
+                 }
+}
