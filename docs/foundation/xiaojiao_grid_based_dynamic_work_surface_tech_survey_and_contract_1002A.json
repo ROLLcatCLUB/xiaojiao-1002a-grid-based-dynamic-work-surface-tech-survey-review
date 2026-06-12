@@ -1,0 +1,88 @@
+{
+    "package_code":  "1002_XIAOJIAO_PROGRESSIVE_GRID_WORK_SURFACE_PACKAGE",
+    "stage_code":  "1002A_XIAOJIAO_GRID_BASED_DYNAMIC_WORK_SURFACE_TECH_SURVEY_AND_CONTRACT",
+    "stage_type":  "tech_survey_and_contract_only",
+    "final_status_target":  "XIAOJIAO_GRID_BASED_DYNAMIC_WORK_SURFACE_TECH_SURVEY_AND_CONTRACT_PASS",
+    "source_gate":  {
+                        "requires_1001_baseline":  "1001_STATE_DRIVEN_INTELLIGENCE_ENGINE_FIXTURE_BASELINE_PASS",
+                        "requires_1000F_I_acceptance":  "1000F_I_MODEL_CANDIDATE_RESOURCE_CONTEXT_FIXTURE_BASELINE_PASS",
+                        "source_files":  [
+                                             "docs/audit/xiaojiao_1001_state_driven_intelligence_engine_fixture_baseline_archive.json",
+                                             "docs/audit/xiaojiao_1000F_to_1000I_model_candidate_resource_context_chain_review_decision.json"
+                                         ]
+                    },
+    "survey_sources":  [
+                           {
+                               "name":  "React-Grid-Layout",
+                               "url":  "https://github.com/react-grid-layout/react-grid-layout",
+                               "evidence":  "draggable and resizable grid layout with responsive breakpoints for React; supports static elements, saved layouts, bounded layouts, responsive layouts"
+                           },
+                           {
+                               "name":  "Gridstack.js",
+                               "url":  "https://gridstackjs.com/",
+                               "evidence":  "modern TypeScript draggable, resizable, responsive dashboard grid library"
+                           },
+                           {
+                               "name":  "dnd-kit",
+                               "url":  "https://dndkit.com/",
+                               "evidence":  "extensible TypeScript drag and drop toolkit with sensors, modifiers, sortable/reorder support"
+                           },
+                           {
+                               "name":  "react-resizable-panels",
+                               "url":  "https://github.com/bvaughn/react-resizable-panels",
+                               "evidence":  "React components for resizable panel groups with min/max and collapsible behavior"
+                           },
+                           {
+                               "name":  "React Flow",
+                               "url":  "https://reactflow.dev/",
+                               "evidence":  "node-based editors and interactive diagrams, useful for future graph views but not core grid surface"
+                           },
+                           {
+                               "name":  "Craft.js",
+                               "url":  "https://github.com/prevwong/craft.js/",
+                               "evidence":  "React framework for page editors; not ready-made UI and too page-editor oriented for core work surface"
+                           }
+                       ],
+    "required_schema_parts":  [
+                                  "surface_mode",
+                                  "grid_layout_schema",
+                                  "zone_type",
+                                  "card_type",
+                                  "card_registry",
+                                  "business_pack_layout_preset",
+                                  "layout_memory_policy",
+                                  "system_recommended_layout",
+                                  "teacher_override_layout",
+                                  "restore_default_layout",
+                                  "card_allowed_zone_rules",
+                                  "drag_resize_boundary_rules"
+                              ],
+    "technology_decision":  {
+                                "primary_candidate":  "React-Grid-Layout",
+                                "secondary_candidate":  "dnd-kit",
+                                "backup_candidate":  "Gridstack.js",
+                                "panel_split_candidate":  "react-resizable-panels",
+                                "not_core_surface":  [
+                                                         "React Flow",
+                                                         "Craft.js"
+                                                     ]
+                            },
+    "hard_boundaries":  {
+                            "dependency_installed":  false,
+                            "real_frontend_modified":  false,
+                            "runtime_connected":  false,
+                            "provider_model_called":  false,
+                            "database_written":  false,
+                            "memory_written":  false,
+                            "Feishu_written":  false,
+                            "formal_export_created":  false,
+                            "real_ui_implemented":  false,
+                            "production_component_selected":  false
+                        },
+    "next_stage":  "1002A_REVIEW_PENDING_BEFORE_UI_PROTOTYPE_OR_DEPENDENCY_INSTALL",
+    "deferred":  [
+                     "UI_PROTOTYPE",
+                     "DEPENDENCY_INSTALL",
+                     "REAL_FRONTEND_RUNTIME_CHANGE"
+                 ]
+}
